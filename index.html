@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avula Rahul</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="shortcut icon" href="assets\profile\IMG_5649.JPG" type="image/x-icon">
+    <script>
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          document.title = "I'M Here";
+        } else {
+          document.title = "Avula Rahul";
+        }
+      });
+    </script>
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">AR</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">AR</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets\profile\IMG_5649.JPG" alt="Sriram profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Avula Rahul</h1>
+        <p class="section__text__p2">Developer · Learner · Builder</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/icons/linkedin.jpg"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/avula-rahul', '_blank', 'noopener,noreferrer')"
+          />
+          <img
+            src="./assets/icons/github.jpg"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/rahulsai1154', '_blank', 'noopener,noreferrer')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets\profile\11.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              My journey into tech started with a simple curiosity—how can machines understand and respond like humans? That question led me to explore voice assistants, AI models, and real-time embedded systems. As a CSIT undergraduate, I’ve built projects that merge intelligence with practicality, like voice-controlled farming tools and smart assistants powered by OpenAI.I worked on a chatbot to support farmers. I believe the best technology is not just innovative but also meaningful—designed to solve real problems and improve lives.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+
+            <h2 class="experience-sub-title project-title">API Integrated Voice Assistant</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/rahulsai1154', '_blank', 'noopener,noreferrer')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/rahulsai1154', '_blank', 'noopener,noreferrer')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects/project-2.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Smart Farming Voice Control</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/rahulsai1154', '_blank', 'noopener,noreferrer')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/rahulsai1154', '_blank', 'noopener,noreferrer')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+    </section>
+    
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Certifications</h1>
+      
+      <div class="certifications-container">
+        
+        <!-- CERTIFICATE 1 -->
+        <div class="certificate-card">
+          <div class="certificate-preview">
+            <img src="assets/certificates/cybersecurity.jpg" alt="Introduction to cybersecurity Certificate" />
+          </div>
+          <h3>Python for DataScience</h3>
+          <a href="assets/certificates/cybersecurity.jpg" target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+        
+        <!-- CERTIFICATE 3 -->
+        <div class="certificate-card">
+          <div class="certificate-preview">
+            <img src="assets/certificates/dl.png" alt="openCV Certificate" />
+          </div>
+          <h3>Python</h3>
+          <a href="assets/certificates/dl.png" target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+        
+        <!-- CERTIFICATE 4 -->
+        <div class="certificate-card">
+          <div class="certificate-preview">
+            <img src="assets/certificates/BDT.png" alt="Big Data Tools Certificate" />
+          </div>
+          <h3>Java</h3>
+          <a href="assets/certificates/BDT.png" target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+        
+        <!-- CERTIFICATE 5 -->
+        <div class="certificate-card">
+          <div class="certificate-preview">
+            <img src="assets/certificates/data analytics.jpg" alt="Data Analytics Certificate" />
+          </div>
+          <h3>DSA-SmartCoder</h3>
+          <a href="assets/certificates/data analytics.jpg" target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+        
+        <!-- CERTIFICATE 6 -->
+        <div class="certificate-card">
+          <div class="certificate-preview">
+            <img src="assets/certificates/sql.jpg" alt="SQL Certificate" />
+          </div>
+          <h3>SQL</h3>
+          <a href="assets/certificates/sql.jpg" target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+
+        <!-- CERTIFICATE 7 -->
+        <div class="certificate-card">
+          <div class="certificate-preview">
+            <img src="assets/certificates/javascript.jpg" alt="JavaScript Certificate" />
+          </div>
+          <h3>JavaScript</h3>
+          <a href="assets/certificates/javascript.jpg" target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+
+        <!-- CERTIFICATE 8 -->
+        <div class="certificate-card">
+          <div class="certificate-preview">
+            <img src="assets/certificates/ml.png" alt="Machine Learning Certificate" />
+          </div>
+          <h3>Networking Basics</h3>
+          <a href="assets/certificates/ml.png" target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+        
+        <!-- CERTIFICATE 9 -->
+        <div class="certificate-card">
+          <div class="certificate-preview">
+            <img src="assets/certificates/ethicalhacking.png" alt="Ethical Hacking Certificate" />
+          </div>
+          <h3>Ethical Hacking</h3>
+          <a href="assets/certificates/ethicalhacking.png" target="_blank" class="cert-btn">View Certificate</a>
+        </div>
+        
+      </div>
+
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+        />
+
+    </section>
+
+
+
+    <!-- SKILLS AND TECH STACK SECTION -->
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills & Coding Profiles</h1>
+
+      <!-- Tech Stack Subsection -->
+      <div class="skills-subsection">
+        <h2 class="skills-subtitle">Tech Stack</h2>
+        <div class="tech-scroll-box">
+          <div class="tech-scroll-content">
+            <img src="assets/tech-icons/python.png" alt="Python" />
+            <img src="assets\tech-icons\java.webp" alt="Java" />
+            <img src="assets/tech-icons/c.jpeg" alt="C" />
+            <img src="assets/tech-icons/c++.jpg" alt="C++" />
+            <img src="assets/tech-icons/html.webp" alt="HTML" />
+            <img src="assets/tech-icons/css.svg" alt="CSS" />
+            <img src="assets/tech-icons/javascript.png" alt="JavaScript" />
+            <img src="assets/tech-icons/mysql.png" alt="MySQL" />
+            <img src="assets/tech-icons/github.png" alt="GitHub" />
+            <img src="assets/tech-icons/vscode.webp" alt="VS Code" />
+            <img src="assets/tech-icons/tensorflow.png" alt="TensorFlow" />
+            <img src="assets/tech-icons/pandas.png" alt="Pandas" />
+            <img src="assets/tech-icons/numpy.webp" alt="NumPy" />
+            <!-- DUPLICATES -->   
+            <img src="assets/tech-icons/python.png" alt="Python" />
+            <img src="assets\tech-icons\java.webp" alt="Java" />
+            <img src="assets/tech-icons/c.jpeg" alt="C" />
+            <img src="assets/tech-icons/c++.jpg" alt="C++" />
+            <img src="assets/tech-icons/html.webp" alt="HTML" />
+            <img src="assets/tech-icons/css.svg" alt="CSS" />
+            <img src="assets/tech-icons/javascript.png" alt="JavaScript" />
+            <img src="assets/tech-icons/mysql.png" alt="MySQL" />
+            <img src="assets/tech-icons/github.png" alt="GitHub" />
+            <img src="assets/tech-icons/vscode.webp" alt="VS Code" />
+            <img src="assets/tech-icons/tensorflow.png" alt="TensorFlow" />
+            <img src="assets/tech-icons/pandas.png" alt="Pandas" />
+            <img src="assets/tech-icons/numpy.webp" alt="NumPy" />
+            
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- Coding Profiles Subsection -->
+      <section id="coding-profiles">
+        <h2 class="skills-subtitle">Coding Profiles</h2> 
+        <div class="coding-container">
+          <div class="card leetcode-card">
+            <img src="assets/coding-logos/leetcode.png" alt="" class="card__img">
+                    <div class="card__data">
+                        <h1 class="card__title">Leetcode</h1>
+                        <h1 class="card__description">Rating : 1564</h1>
+                        <a href="https://leetcode.com/u/omsriram/" class="card__button" target="_blank" rel="noopener noreferrer">
+                          View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card codechef-card">
+                    <img src="assets/coding-logos/codechef.png" alt="CodeChef Logo" class="card__img" />
+                    <div class="card__data">
+                        <h1 class="card__title">CodeChef</h1>
+                        <h1 class="card__description">Rating : 1502</h1>
+                        <a href="https://www.codechef.com/users/omsriram_b_12" class="card__button" target="_blank" rel="noopener noreferrer">
+                          View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hackerrank-card">
+                    <img src="assets/coding-logos/hackerrank.png" alt="" class="card__img">
+                    <div class="card__data">
+                        <h1 class="card__title">HackerRank</h1>
+                        <h1 class="card__description">Hackos : 281</h1>
+                        <a href="https://www.hackerrank.com/profile/satyasriramsrir1" class="card__button" target="_blank" rel="noopener noreferrer">
+                          View Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+      </section>
+
+
+      <!-- Arrow to go to Contact section -->
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+
+    </section>
+
+      
+
+    <!-- CONTACT    -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons/email.webp"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=avularahul9866@gmail.com" target="_blank" rel="noopener noreferrer">avularahul9866@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons/linkedin.jpg"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/avula-rahul" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="section__text__p1">"Innovation isn't about complexity — it's about solving the right problem."</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
